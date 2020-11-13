@@ -1,13 +1,26 @@
 class UsersController < ApplicationController
-    # def index
-    #     user = User.all
-    #     render json: user
-    # end
+    skip_before_action :logged_in?, only: [:create]
+    def index
+        headers= request.headers["Authorization"]
+        token= headers.split(" ")[1]
+        begin
+            
+        user_id = JWT.decode(token, "se082420")[0]["user_id"]
+        user= User.find(user_id)
+        # rescue JWT::DecodeError
+        rescue 
 
-    # def show
-    #     user = User.find(params[:id])
-    #     render json: user
-    # end
+           user=nil
+        end
+        
+        render json: user, include: :movies  
+
+    end
+
+    def show
+        user = User.find(params[:id])
+        render json: user, include: :movies
+    end
 
     def create
         user = User.new(user_params)

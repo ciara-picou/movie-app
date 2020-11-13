@@ -13,18 +13,20 @@ class Signup extends Component{
     signUp = (e) => {
     e.preventDefault()
 
-    fetch("http://localhost:3000/movies", {
+    fetch("http://localhost:3000/users", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringyfy({
+        body: JSON.stringify({
             username: this.state.username,
             password: this.state.password
         })
     })
     .then(res => res.json())
-    .then()
+    .then(() => {
+        this.props.history.push("/login")
+    })
     }
     
     render(){

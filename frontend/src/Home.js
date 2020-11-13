@@ -1,11 +1,15 @@
 import React from 'react';
 
- const Home= () => {
- 
+ const Home= (props) => {
+ const handleLogin=()=>{props.history.push("/login")}
+ const handleSignup=()=>{props.history.push("/signup")}
     return (
       <div>
-          <h2>Farzana and Ciara's Incredibly Awesome Movie App</h2>
+          <h2>MovieNight</h2>
+          <button onClick={handleLogin}className="log-in">Login</button>
+          <button onClick={handleSignup}className="sign-up">Sign Up</button>
       </div>
+
     );
 
 }
