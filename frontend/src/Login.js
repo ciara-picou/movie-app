@@ -1,6 +1,9 @@
 import React, {Component} from 'react'
-
-class LogIn extends Component{
+class Login extends Component{
+    state = {
+        username: "",
+        password: ""
+    }
     handleChange = (e) => {
      this.setState({
          [e.target.name]: e.target.value
@@ -13,7 +16,8 @@ class LogIn extends Component{
         fetch("http://localhost:3000/login", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                Accept: "application/json"
             },
             body: JSON.stringify({
                 username: this.state.username,
@@ -21,13 +25,15 @@ class LogIn extends Component{
             })
         })
         .then(res => res.json())
-        .then()
+        .then(userInfo => {
+            localStorage.token=userInfo.token
+        })
     }
     render(){
         return(
             <div>
-                <h2>log In</h2>
-                <form onSubmit={(e) => this.handleSubmit}>
+                <h2>Log In</h2>
+                <form onSubmit={(e) => this.handleSubmit(e)}>
                     <label>Username</label>
                     <input onChange={(e) => this.handleChange(e)} name="username" type="text" />
                     <label>Password</label>
@@ -38,7 +44,8 @@ class LogIn extends Component{
         )
     }
 }
-export default LogIn
+export default Login
+
 
 
 

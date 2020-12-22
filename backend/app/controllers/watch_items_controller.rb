@@ -10,8 +10,8 @@ class WatchItemsController < ApplicationController
   end
 
   def create
-    watch_item = WatchItem.create(watch_params)
-    render json: watch_item, include: [:movies, :users]
+    watch_item = WatchItem.create!(watch_params)
+    render json: watch_item, include: [:movie, :user]
     #User.create(params[:username])
   end
     

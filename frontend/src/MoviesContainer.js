@@ -1,34 +1,39 @@
 import React, { Component } from 'react';
 import Movie from './Movie'
 import MyMovies from './MyMovies'
+import Search from './components/Search'
+
 
  export class MoviesContainer extends Component {
 
-  state = {
-    allMovies: []
-  }
-
-  componentDidMount = () => {
-    fetch('http://localhost:3000/movies')
-    .then(res => res.json())
-    .then(movies => {
-      this.setState({
-        allMovies: movies
-      })
-    })
-
-  }
+ 
   
   render() {
     return (
       <div>
           <h1>Movies List</h1>
-          {this.state.allMovies.map(movie => {
-            return <Movie key={movie.id} movie={movie}/>
-          })}
+          <Search updateFilter={this.props.updateFilter} handleSearch={this.props.handleSearch}/> 
+          {localStorage.token
+          ? 
+          this.props.allMovies.map(movie => { return <Movie  movie={movie} addMovies={this.props.addMovies}/>})
+          :
+        <h4>Please Log In</h4>
+       
+        
+        }
+       
       </div>
     );
   }
 
 }
+
+
+// {this.props.myMovies.map(movie => {
+//   return <MyMovies movie={movie}  />
+// })}
+        
+//We currently have no way of telling MoviesContainer whether it should be rendering allMovies or MyMovies
+
+
 
