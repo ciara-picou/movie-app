@@ -87,7 +87,7 @@ export class MoviesContainer extends Component {
       <div className='movies-container'>
         {this.props.allMovies.map(movie => {
           return (
-              <Movie className='movie' history={this.props.history} movie={movie} addMovies={this.props.addMovies} />
+              <Movie className='movie' history={this.props.history} movie={movie} addMovies={this.props.addMovies} select={this.props.selectMovie} />
           );
         })}
         </div>
