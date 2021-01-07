@@ -28,14 +28,12 @@ class UsersController < ApplicationController
         if user.valid?
             user.save
             render json: user, status: :created
-            # render json: {user}, status: :created
-            # render json: {user: UserSerializer.new(user)}, status: :created
+        
         else
             render json: {error: "Failed to create a user"}, status: :not_acceptable
         end
     end
         
-        #User.create(params[:username])
         
         
    

@@ -2283,6 +2283,10 @@ movies = [
 Movie.destroy_all
 Genre.destroy_all
 MovieGenre.destroy_all
+
+
+
+
 movies.each do |movie| 
     m=Movie.create(
         title: movie[:title],
@@ -2294,6 +2298,8 @@ movies.each do |movie|
         poster_url: movie[:poster],
         mood: "🙂"
     )
+
+
     movie[:genres].each do |genre|
         g=Genre.find_by(name: genre)
         if !g  

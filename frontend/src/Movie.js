@@ -10,13 +10,20 @@ import{ Card, Button } from 'react-bootstrap';
     state={
       isClicked:false
     }
+
     showDetails=()=>{
       console.log("I've been clicked!")
       this.setState({isClicked: !this.state.isClicked})
     }
+
+    addMovieHandler = () => {
+      this.props.addMovies(this.props.movie)
+      this.props.history.push('/my-movies')
+    }
+
          render(){
           return(
-            <Card style={{ width: '18rem' }} id="movies" >
+            <Card className='movie' style={{ width: '18rem' }} id="movies" >
           <Card.Img variant="top" src={this.props.movie.poster_url} />
           <Card.Body>
           <Card.Title>{this.props.movie.title}</Card.Title>
@@ -25,6 +32,7 @@ import{ Card, Button } from 'react-bootstrap';
           </Card.Text>
           {this.state.isClicked ? <MovieDetails movie={this.props.movie} addMovies={this.props.addMovies}/> : null}
         <Button variant="secondary" onClick={this.showDetails}>Movie Details</Button>
+        <Button variant="secondary" onClick={this.addMovieHandler}>Add To My Movies</Button>
      </Card.Body>
     </Card>
           )
