@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom'
 import  Home  from './Home';
 import { MyMovies } from './MyMovies';
 import  Movie  from './Movie';
@@ -11,6 +11,7 @@ import Tron from './components/JumboTron';
 import Login from './Login';
 import Signup from './Signup';
 import Search from './components/Search';
+import MoviePage from './components/MoviePage'
 
 class App extends Component {
   state = {
@@ -19,8 +20,8 @@ class App extends Component {
     filter: "All",
     searchValue:"",
     myMovies:[],
-    loggedInUserId: null
-    
+    loggedInUserId: null,
+    selectedMovie: ''
   }
 
   componentDidMount = () => {
@@ -127,8 +128,12 @@ setLoggedInUserId = (id) => {
     return displayMovies
   }
 
+  selectMovie = (movie) => {
+    this.setState({selectedMovie: movie})
+  }
+
   render(){
-    console.log(this.state.allMovies)
+    console.log(this.state.selectedMovie)
     return (
       <React.Fragment>
         <NavBar/>
@@ -139,7 +144,8 @@ setLoggedInUserId = (id) => {
               <Route path="/login" render={(routerProps)=> <Login {...routerProps} setUser={this.setLoggedInUserId}/>}/>
               <Route path="/signup" render={(routerProps)=> <Signup {...routerProps}/>}/>
               <Route exact path="/" render={(routerProps)=> <Home {...routerProps}/>}/>
-              <Route  path="/movies" render={(routerProps)=> <MoviesContainer {...routerProps}
+              <Route path="/moviepage" render={(routerProps)=> <MoviePage {...routerProps} selectedMovie={this.state.selectedMovie}/>}/>
+              <Route path="/movies" render={(routerProps)=> <MoviesContainer {...routerProps}
                
               myMovies={this.state.myMovies} 
                allMovies={this.displayMovies()} 
@@ -147,6 +153,7 @@ setLoggedInUserId = (id) => {
               updateFilter={this.updateFilter} 
               handleSearch={this.handleSearch}
               addMovies={this.addMovies}
+              selectMovie={this.selectMovie}
               
               />}/>
 

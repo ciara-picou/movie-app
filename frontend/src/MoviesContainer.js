@@ -15,7 +15,7 @@ import Search from './components/Search'
           <Search updateFilter={this.props.updateFilter} handleSearch={this.props.handleSearch}/> 
           {localStorage.token
           ? 
-          this.props.allMovies.map(movie => { return <Movie  movie={movie} addMovies={this.props.addMovies}/>})
+          this.props.allMovies.map(movie => { return <Movie history={this.props.history}  movie={movie} addMovies={this.props.addMovies} select={this.props.selectMovie}/>})
           :
         <h4>Please Log In</h4>
        
