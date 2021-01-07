@@ -1,20 +1,24 @@
-import React from "react"
+import React from "react";
 
 //export const MyMovies = (props) => {
 export const MyMovies = (props) => {
-
-  
-  return(
+  return (
     <div>
-        <h1>My Movies!</h1>
-        <div className="card">
+      <ul>
+      {props.myMovies.map((movie)=><li>{movie.title}</li>)}
+      </ul>
+      {/* <div className="card">
         <h2>{props.movie.title}</h2>
-        <img src={props.movie.poster_url} alt={props.movie.title} className="movie-image" width="400"/>
-        <button onClick={null}className="learn-more-btn">Movie Details</button>
+        <img
+          src={props.movie.poster_url}
+          alt={props.movie.title}
+          className="movie-image"
+          width="400"
+        />
+        {/* <button onClick={null}className="learn-more-btn">Movie Details</button> */}
+      {/* </div> */} 
     </div>
-    </div>
-  )
-}
+  );
+};
 
-
-export default MyMovies
+export default MyMovies;

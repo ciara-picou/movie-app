@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import  Home  from './Home';
 import { MyMovies } from './MyMovies';
 import  Movie  from './Movie';
@@ -25,118 +25,111 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    fetch('http://localhost:3000/movies',{
+    fetch("http://localhost:3000/movies", {
       method: "GET",
-      headers:{
-        "Authorization": `Bearer ${localStorage.token}`,
+      headers: {
+        Authorization: `Bearer ${localStorage.token}`,
         "Content-Type": "application/json",
-        Accept: "application/json"
-      }
+        Accept: "application/json",
+      },
     })
-    .then(res => res.json())
-    .then(movies => {
-       this.setState({
-         allMovies: movies
-       })
-    })
+      .then((res) => res.json())
+      .then((movies) => {
+        this.setState({
+          allMovies: movies,
+        });
+      });
 
-    fetch(`http://localhost:3000/users`,{
-      headers:{
-        "Authorization": `Bearer ${localStorage.token}`,
+    fetch(`http://localhost:3000/users`, {
+      headers: {
+        Authorization: `Bearer ${localStorage.token}`,
         "Content-Type": "application/json",
-        Accept: "application/json"
-      }
+        Accept: "application/json",
+      },
     })
-    .then(res => res.json())
-    .then(user => {
-      this.setState({
-        myMovies: user.movies,
-        loggedInUserId: user.id
-      })
-    })
-  
-}
-setLoggedInUserId = (id) => {
-  this.setState({
-    loggedInUserId: id
-  })
-}
-
+      .then((res) => res.json())
+      .then((user) => {
+        this.setState({
+          myMovies: user.movies,
+          loggedInUserId: user.id,
+        });
+      });
+  };
+  setLoggedInUserId = (id) => {
+    this.setState({
+      loggedInUserId: id,
+    });
+  };
 
   updateFilter = (newFilter) => {
-    console.log(newFilter)
+    console.log(newFilter);
     this.setState({
-      filter: newFilter
-    })
-
-  }
-
+      filter: newFilter,
+    });
+  };
 
   handleSearch = (searchValue) => {
-    
     this.setState({
-      searchValue: searchValue
-    })
+      searchValue: searchValue,
+    });
+  };
 
-  }
+  // checkGenre = (genres, searchTerm) => {
+  //    genres.forEach(genre => {
+  //     if (genre.name.includes(searchTerm)){
+  //       return true
+  //     }
+  //    })
+  // }
 
-  checkGenre = (genres, searchTerm) => {
-   
-     genres.forEach(genre => {
-      if (genre.name.includes(searchTerm)){
-        return true
-      }
-     })
-  }
-
-  addMovies=(newMovie)=>{
-    console.log("Let's add this movie!")
-    if(!this.state.myMovies.find(movie => movie.id === newMovie.id)){
-      fetch('http://localhost:3000/watch_items',{
-        method:"POST",
-        headers:{
-          "Authorization": `Bearer ${localStorage.token}`,
-          "Content-Type":"application/json",
-          "Accept": "application/json"
+  addMovies = (newMovie) => {
+    console.log("Let's add this movie!");
+    if (!this.state.myMovies.find((movie) => movie.id === newMovie.id)) {
+      fetch("http://localhost:3000/watch_items", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${localStorage.token}`,
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify({
           watch_items: {
             movie_id: newMovie.id,
-            user_id: this.state.loggedInUserId
-        }
-        })
+            user_id: this.state.loggedInUserId,
+          },
+        }),
       })
-      .then(res=>res.json())
-      .then(this.setState({
-        myMovies:[...this.state.myMovies, newMovie]
-      }))
-      
-      
+        .then((res) => res.json())
+        .then(
+          // (data) => console.log(data)
+          this.setState({
+            myMovies: [...this.state.myMovies, newMovie],
+          })
+        );
     }
-  }
-
- 
-
-  
+  };
 
   displayMovies = () => {
-    let displayMovies = this.state.allMovies.filter(movie => movie.title.toLowerCase().includes(this.state.searchValue.toLowerCase()))
-    
-    if (this.state.filter !== "All"){
-      return displayMovies.filter(movie => movie.genres.some(genre => genre.name.includes(this.state.filter)))  
+    let displayMovies = this.state.allMovies.filter((movie) =>
+      movie.title.toLowerCase().includes(this.state.searchValue.toLowerCase())
+    );
+
+    if (this.state.filter !== "All") {
+      return displayMovies.filter((movie) =>
+        movie.genres.some((genre) => genre.name.includes(this.state.filter))
+      );
     }
-    return displayMovies
-  }
+    return displayMovies;
+  };
 
   selectMovie = (movie) => {
     this.setState({selectedMovie: movie})
   }
 
   render(){
-    console.log(this.state.selectedMovie)
     return (
       <React.Fragment>
-        <NavBar/>
+        <NavBar />
         {/* <Tron/> */}
         
           <Router>
@@ -154,17 +147,16 @@ setLoggedInUserId = (id) => {
               handleSearch={this.handleSearch}
               addMovies={this.addMovies}
               selectMovie={this.selectMovie}
-              
               />}/>
-
-              <Route  path="/my-movies" render={(routerProps)=> <MyMovies {...routerProps}
-              myMovies={this.state.myMovies} 
-             
-              />}/>
-              <Route  component={NoMatch}/>
-            </Switch>
-          </Router>
-        
+            <Route
+              path="/my-movies"
+              render={(routerProps) => (
+                <MyMovies {...routerProps} myMovies={this.state.myMovies} addMovies={this.addMovies} />
+              )}
+            />
+            <Route component={NoMatch} />
+          </Switch>
+        </Router>
       </React.Fragment>
     );
   }
@@ -172,6 +164,6 @@ setLoggedInUserId = (id) => {
 
 export default App;
 
-//if we could change the state in movie details and send that state up to app. js then 
-//we could check the state in app.js and use a conditional statement to either send 
+//if we could change the state in movie details and send that state up to app. js then
+//we could check the state in app.js and use a conditional statement to either send
 //my movies down as the value for the allMovies prop
