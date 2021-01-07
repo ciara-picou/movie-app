@@ -1,39 +1,28 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./Home";
-import { MyMovies } from "./MyMovies";
-import { MoviesContainer } from "./MoviesContainer";
-import { NoMatch } from "./NoMatch";
-import { Layout } from "./components/Layout";
-import NavBar from "./components/NavBar";
-import Tron from "./components/JumboTron";
-import Login from "./Login";
-import Signup from "./Signup";
+import React, { Component } from 'react';
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import  Home  from './Home';
+import { MyMovies } from './MyMovies';
+import  Movie  from './Movie';
+import { MoviesContainer } from './MoviesContainer';
+import { NoMatch } from './NoMatch';
+import {Layout}  from './components/Layout';
+import NavBar from './components/NavBar';
+import Tron from './components/JumboTron';
+import Login from './Login';
+import Signup from './Signup';
+import Search from './components/Search';
+import MoviePage from './components/MoviePage'
 
 class App extends Component {
   state = {
     allMovies: [],
     allGenres: [],
     filter: "All",
-    searchValue: "",
-    myMovies: [ 
-      {
-        id: 1,
-        title: "Beetlejuice",
-        year: "1988",
-        runtime: "92",
-        genres: ["Comedy", "Fantasy"],
-        director: "Tim Burton",
-        actors: "Alec Baldwin, Geena Davis, Annie McEnroe, Maurice Page",
-        plot:
-          'A couple of recently deceased ghosts contract the services of a "bio-exorcist" in order to remove the obnoxious new owners of their house.',
-        poster:
-          "https://resizing.flixster.com/gBrt2Pizroxd0QGaaSbEjlfHet0=/206x305/v2/https://flxt.tmsimg.com/NowShowing/1673/1673_ab.jpg",
-        mood: "",
-      }
-    ],
+    searchValue:"",
+    myMovies:[],
     loggedInUserId: null,
-  };
+    selectedMovie: ''
+  }
 
   componentDidMount = () => {
     fetch("http://localhost:3000/movies", {
@@ -133,45 +122,32 @@ class App extends Component {
     return displayMovies;
   };
 
-  render() {
-    console.log(this.state.allMovies);
+  selectMovie = (movie) => {
+    this.setState({selectedMovie: movie})
+  }
+
+  render(){
     return (
       <React.Fragment>
         <NavBar />
         {/* <Tron/> */}
-
-        <Router>
-          <Switch>
-            <Route
-              path="/login"
-              render={(routerProps) => (
-                <Login {...routerProps} setUser={this.setLoggedInUserId} />
-              )}
-            />
-            <Route
-              path="/signup"
-              render={(routerProps) => <Signup {...routerProps} />}
-            />
-            <Route
-              exact
-              path="/"
-              render={(routerProps) => <Home {...routerProps} />}
-            />
-            <Route
-              path="/movies"
-              render={(routerProps) => (
-                <MoviesContainer
-                  {...routerProps}
-                  myMovies={this.state.myMovies}
-                  allMovies={this.displayMovies()}
-                  //allMovies={[]}
-                  updateFilter={this.updateFilter}
-                  handleSearch={this.handleSearch}
-                  addMovies={this.addMovies}
-                />
-              )}
-            />
-
+        
+          <Router>
+            <Switch>
+              <Route path="/login" render={(routerProps)=> <Login {...routerProps} setUser={this.setLoggedInUserId}/>}/>
+              <Route path="/signup" render={(routerProps)=> <Signup {...routerProps}/>}/>
+              <Route exact path="/" render={(routerProps)=> <Home {...routerProps}/>}/>
+              <Route path="/moviepage" render={(routerProps)=> <MoviePage {...routerProps} selectedMovie={this.state.selectedMovie}/>}/>
+              <Route path="/movies" render={(routerProps)=> <MoviesContainer {...routerProps}
+               
+              myMovies={this.state.myMovies} 
+               allMovies={this.displayMovies()} 
+               //allMovies={[]} 
+              updateFilter={this.updateFilter} 
+              handleSearch={this.handleSearch}
+              addMovies={this.addMovies}
+              selectMovie={this.selectMovie}
+              />}/>
             <Route
               path="/my-movies"
               render={(routerProps) => (

@@ -16,6 +16,11 @@ import{ Card, Button } from 'react-bootstrap';
       this.setState({isClicked: !this.state.isClicked})
     }
 
+    moviePageClick = () => {
+      this.props.select(this.props.movie)
+      this.props.history.push('/moviepage')
+    }
+    
     addMovieHandler = () => {
       this.props.addMovies(this.props.movie)
       this.props.history.push('/my-movies')
@@ -32,6 +37,7 @@ import{ Card, Button } from 'react-bootstrap';
           </Card.Text>
           {this.state.isClicked ? <MovieDetails movie={this.props.movie} addMovies={this.props.addMovies}/> : null}
         <Button variant="secondary" onClick={this.showDetails}>Movie Details</Button>
+        <Button style={{margin: '5px'}}variant="primary" onClick={this.moviePageClick}>Movie Page</Button>
         <Button variant="secondary" onClick={this.addMovieHandler}>Add To My Movies</Button>
      </Card.Body>
     </Card>
