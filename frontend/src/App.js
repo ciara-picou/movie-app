@@ -1,28 +1,28 @@
-import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import  Home  from './Home';
-import { MyMovies } from './MyMovies';
-import  Movie  from './Movie';
-import { MoviesContainer } from './MoviesContainer';
-import { NoMatch } from './NoMatch';
-import {Layout}  from './components/Layout';
-import NavBar from './components/NavBar';
-import Tron from './components/JumboTron';
-import Login from './Login';
-import Signup from './Signup';
-import Search from './components/Search';
-import MoviePage from './components/MoviePage'
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./Home";
+import { MyMovies } from "./MyMovies";
+import Movie from "./Movie";
+import { MoviesContainer } from "./MoviesContainer";
+import { NoMatch } from "./NoMatch";
+import { Layout } from "./components/Layout";
+import NavBar from "./components/NavBar";
+import Tron from "./components/JumboTron";
+import Login from "./Login";
+import Signup from "./Signup";
+import Search from "./components/Search";
+import MoviePage from "./components/MoviePage";
 
 class App extends Component {
   state = {
     allMovies: [],
     allGenres: [],
     filter: "All",
-    searchValue:"",
-    myMovies:[],
+    searchValue: "",
+    myMovies: [],
     loggedInUserId: null,
-    selectedMovie: ''
-  }
+    selectedMovie: "",
+  };
 
   componentDidMount = () => {
     fetch("http://localhost:3000/movies", {
@@ -123,35 +123,64 @@ class App extends Component {
   };
 
   selectMovie = (movie) => {
-    this.setState({selectedMovie: movie})
-  }
+    this.setState({ selectedMovie: movie });
+  };
 
-  render(){
+  render() {
     return (
       <React.Fragment>
         <NavBar />
         {/* <Tron/> */}
-        
-          <Router>
-            <Switch>
-              <Route path="/login" render={(routerProps)=> <Login {...routerProps} setUser={this.setLoggedInUserId}/>}/>
-              <Route path="/signup" render={(routerProps)=> <Signup {...routerProps}/>}/>
-              <Route exact path="/" render={(routerProps)=> <Home {...routerProps}/>}/>
-              <Route path="/moviepage" render={(routerProps)=> <MoviePage {...routerProps} selectedMovie={this.state.selectedMovie}/>}/>
-              <Route path="/movies" render={(routerProps)=> <MoviesContainer {...routerProps}
-               
-              myMovies={this.state.myMovies} 
-               allMovies={this.displayMovies()} 
-               //allMovies={[]} 
-              updateFilter={this.updateFilter} 
-              handleSearch={this.handleSearch}
-              addMovies={this.addMovies}
-              selectMovie={this.selectMovie}
-              />}/>
+
+        <Router>
+          <Switch>
+            <Route
+              path="/login"
+              render={(routerProps) => (
+                <Login {...routerProps} setUser={this.setLoggedInUserId} />
+              )}
+            />
+            <Route
+              path="/signup"
+              render={(routerProps) => <Signup {...routerProps} />}
+            />
+            <Route
+              exact
+              path="/"
+              render={(routerProps) => <Home {...routerProps} />}
+            />
+            <Route
+              path="/moviepage"
+              render={(routerProps) => (
+                <MoviePage
+                  {...routerProps}
+                  selectedMovie={this.state.selectedMovie}
+                />
+              )}
+            />
+            <Route
+              path="/movies"
+              render={(routerProps) => (
+                <MoviesContainer
+                  {...routerProps}
+                  myMovies={this.state.myMovies}
+                  allMovies={this.displayMovies()}
+                  //allMovies={[]}
+                  updateFilter={this.updateFilter}
+                  handleSearch={this.handleSearch}
+                  addMovies={this.addMovies}
+                  selectMovie={this.selectMovie}
+                />
+              )}
+            />
             <Route
               path="/my-movies"
               render={(routerProps) => (
-                <MyMovies {...routerProps} myMovies={this.state.myMovies} addMovies={this.addMovies} />
+                <MyMovies
+                  {...routerProps}
+                  myMovies={this.state.myMovies}
+                  addMovies={this.addMovies}
+                />
               )}
             />
             <Route component={NoMatch} />
