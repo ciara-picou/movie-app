@@ -7,7 +7,6 @@ import { MoviesContainer } from "./MoviesContainer";
 import { NoMatch } from "./NoMatch";
 import { Layout } from "./components/Layout";
 import NavBar from "./components/NavBar";
-import Tron from "./components/JumboTron";
 import Login from "./Login";
 import Signup from "./Signup";
 import Search from "./components/Search";
@@ -49,12 +48,14 @@ class App extends Component {
     })
       .then((res) => res.json())
       .then((user) => {
+        console.log(user);
         this.setState({
-          myMovies: user.movies,
           loggedInUserId: user.id,
+          myMovies: user.watch_items,
         });
       });
   };
+
   setLoggedInUserId = (id) => {
     this.setState({
       loggedInUserId: id,
@@ -74,14 +75,6 @@ class App extends Component {
     });
   };
 
-  // checkGenre = (genres, searchTerm) => {
-  //    genres.forEach(genre => {
-  //     if (genre.name.includes(searchTerm)){
-  //       return true
-  //     }
-  //    })
-  // }
-
   addMovies = (newMovie) => {
     console.log("Let's add this movie!");
     if (!this.state.myMovies.find((movie) => movie.id === newMovie.id)) {
@@ -100,12 +93,13 @@ class App extends Component {
         }),
       })
         .then((res) => res.json())
-        .then(
-          // (data) => console.log(data)
+
+        .then((theNewMovie) => {
           this.setState({
-            myMovies: [...this.state.myMovies, newMovie],
-          })
-        );
+            myMovies: [...this.state.myMovies, theNewMovie],
+          });
+        });
+      console.log(this.state.myMovies); //=> [] but why??
     }
   };
 
@@ -126,12 +120,28 @@ class App extends Component {
     this.setState({ selectedMovie: movie });
   };
 
+  delete = (watchItemId) => {
+    let updateMyMovies = this.state.myMovies.filter(
+      (movie) => movie.id !== watchItemId
+    );
+    fetch(`http://localhost:3000/watch_items/${watchItemId}`, {
+      method: "DELETE",
+      headers: {
+        Authorization: `Bearer ${localStorage.token}`,
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    }).then(
+      this.setState({
+        myMovies: updateMyMovies,
+      })
+    );
+  };
+
   render() {
     return (
       <React.Fragment>
         <NavBar />
-        {/* <Tron/> */}
-
         <Router>
           <Switch>
             <Route
@@ -150,6 +160,7 @@ class App extends Component {
               render={(routerProps) => <Home {...routerProps} />}
             />
             <Route
+              exact
               path="/moviepage"
               render={(routerProps) => (
                 <MoviePage
@@ -159,13 +170,13 @@ class App extends Component {
               )}
             />
             <Route
+              exact
               path="/movies"
               render={(routerProps) => (
                 <MoviesContainer
                   {...routerProps}
                   myMovies={this.state.myMovies}
                   allMovies={this.displayMovies()}
-                  //allMovies={[]}
                   updateFilter={this.updateFilter}
                   handleSearch={this.handleSearch}
                   addMovies={this.addMovies}
@@ -180,6 +191,7 @@ class App extends Component {
                   {...routerProps}
                   myMovies={this.state.myMovies}
                   addMovies={this.addMovies}
+                  deleteMovie={this.delete}
                 />
               )}
             />
@@ -192,7 +204,3 @@ class App extends Component {
 }
 
 export default App;
-
-//if we could change the state in movie details and send that state up to app. js then
-//we could check the state in app.js and use a conditional statement to either send
-//my movies down as the value for the allMovies prop

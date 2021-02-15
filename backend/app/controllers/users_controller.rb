@@ -13,8 +13,12 @@ class UsersController < ApplicationController
            user=nil
         end
         
-        render json: user, include: :movies  
-
+         render json: user, include: [:watch_items]  
+        # render json: user, include: [:movies]  
+        # render json: user, include: [:movies, :reviews] 
+        #  if you want to associate all of a users reviews with that user
+        #you must change all render jsons to the commented out format above
+    
     end
 
     def show

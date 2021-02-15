@@ -4,7 +4,7 @@ class MoviesController < ApplicationController
     def index
          movies = Movie.all
       
-        render json: movies, include: :genres
+        render json: movies, include: [:genres, :reviews]
      
         
     end
@@ -12,7 +12,7 @@ class MoviesController < ApplicationController
     
     def show
         movie = Movie.find(params[:id])
-        render json: movie, include: :genres
+        render json: movie, include: [:genres, :reviews]
     end
     
     private
