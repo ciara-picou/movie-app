@@ -1,22 +1,31 @@
 import React from "react";
-
-//export const MyMovies = (props) => {
+import { Card, Button } from "react-bootstrap";
 export const MyMovies = (props) => {
   return (
     <div>
-      <ul>
-      {props.myMovies.map((movie)=><li>{movie.title}</li>)}
-      </ul>
-      {/* <div className="card">
-        <h2>{props.movie.title}</h2>
-        <img
-          src={props.movie.poster_url}
-          alt={props.movie.title}
-          className="movie-image"
-          width="400"
-        />
-        {/* <button onClick={null}className="learn-more-btn">Movie Details</button> */}
-      {/* </div> */} 
+      {props.myMovies.map((movie) => (
+        <div className="movies-container">
+          <Card className="movie" style={{ width: "18rem" }} id="movies">
+            <h2>{movie.movie.title}</h2>
+            <Card.Img
+              variant="top"
+              src={movie.movie.poster_url}
+              alt={movie.movie.title}
+              className="movie-image"
+              width="400"
+            />
+            <Card.Body>
+              <Card.Title>{movie.movie.title}</Card.Title>
+              <Button
+                variant="secondary"
+                onClick={(e) => props.deleteMovie(movie.id)}
+              >
+                Remove
+              </Button>
+            </Card.Body>
+          </Card>
+        </div>
+      ))}
     </div>
   );
 };

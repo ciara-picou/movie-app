@@ -7,5 +7,7 @@ resources  :genres
 resources :movie_genres
 resources :watch_items
 
+resources :reviews
+
 post "/login", to: "auth#create"
 end
