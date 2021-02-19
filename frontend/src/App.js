@@ -17,10 +17,12 @@ class App extends Component {
     allMovies: [],
     allGenres: [],
     filter: "All",
+    moodFilter: "All",
     searchValue: "",
     myMovies: [],
     loggedInUserId: null,
     selectedMovie: "",
+    reviews: [],
   };
 
   componentDidMount = () => {
@@ -51,7 +53,22 @@ class App extends Component {
         console.log(user);
         this.setState({
           loggedInUserId: user.id,
-          myMovies: user.watch_items,
+          myMovies: user.movies,
+        });
+      });
+
+    fetch("http://localhost:3000/reviews", {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${localStorage.token}`,
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((reviews) => {
+        this.setState({
+          reviews: reviews,
         });
       });
   };
@@ -69,6 +86,13 @@ class App extends Component {
     });
   };
 
+  updateMoodFilter = (newFilter) => {
+    console.log(newFilter);
+    this.setState({
+      moodFilter: newFilter,
+    });
+  };
+
   handleSearch = (searchValue) => {
     this.setState({
       searchValue: searchValue,
@@ -76,7 +100,7 @@ class App extends Component {
   };
 
   addMovies = (newMovie) => {
-    console.log("Let's add this movie!");
+    console.log(newMovie);
     if (!this.state.myMovies.find((movie) => movie.id === newMovie.id)) {
       fetch("http://localhost:3000/watch_items", {
         method: "POST",
@@ -96,10 +120,10 @@ class App extends Component {
 
         .then((theNewMovie) => {
           this.setState({
-            myMovies: [...this.state.myMovies, theNewMovie],
+            myMovies: [...this.state.myMovies, theNewMovie.movie],
           });
+          console.log(this.state.myMovies);
         });
-      console.log(this.state.myMovies); //=> [] but why??
     }
   };
 
@@ -112,6 +136,10 @@ class App extends Component {
       return displayMovies.filter((movie) =>
         movie.genres.some((genre) => genre.name.includes(this.state.filter))
       );
+    }
+    if (this.state.moodFilter !== "All") {
+      return displayMovies.filter((movie) =>
+        movie.mood === this.state.moodFilter)
     }
     return displayMovies;
   };
@@ -136,6 +164,35 @@ class App extends Component {
         myMovies: updateMyMovies,
       })
     );
+  };
+
+  newReview = (e) => {
+    console.log(e.target.value[0], e.target.value[1], e.target.value[2]);
+    // fetch("http://localhost:3000/reviews", {
+    //     method: "POST",
+    //     headers: {
+    //       Authorization: `Bearer ${localStorage.token}`,
+    //       "Content-Type": "application/json",
+    //       Accept: "application/json",
+    //     },
+    //     body: JSON.stringify({
+    //       reviews: {
+    //         content:e.target.value[0],
+    //         movie_id:e.target.value[1].id,
+    //         username:e.target.value[2]
+    //       },
+    //     }),
+    //   })
+    //     .then((res) => res.json())
+
+    //     .then((theNewReview) => {
+    //       this.setState({
+    //         reviews: [...this.state.reviews, theNewReview],
+    //         selectedMovie:e.target.value[1]
+
+    //       });
+    //       console.log(this.state.myMovies)
+    //     });
   };
 
   render() {
@@ -166,6 +223,7 @@ class App extends Component {
                 <MoviePage
                   {...routerProps}
                   selectedMovie={this.state.selectedMovie}
+                  newReview={this.newReview}
                 />
               )}
             />
@@ -178,6 +236,7 @@ class App extends Component {
                   myMovies={this.state.myMovies}
                   allMovies={this.displayMovies()}
                   updateFilter={this.updateFilter}
+                  updateMoodFilter={this.updateMoodFilter}
                   handleSearch={this.handleSearch}
                   addMovies={this.addMovies}
                   selectMovie={this.selectMovie}

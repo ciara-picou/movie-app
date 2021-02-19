@@ -16,6 +16,7 @@ export class MoviesContainer extends Component {
         <h1>Movies List</h1>
         <Search
           updateFilter={this.props.updateFilter}
+          updateMoodFilter={this.props.updateMoodFilter}
           handleSearch={this.props.handleSearch}
         />
         {localStorage.token ? (

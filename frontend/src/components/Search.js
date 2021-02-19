@@ -1,18 +1,21 @@
-import React from 'react';
+import React from "react";
 
 const Search = (props) => {
   return (
     <div>
-    <strong>Search Movies:</strong>
+      <strong>Search Movies:</strong>
       <label>
-        <input type="text" onChange={(e)=>props.handleSearch(e.target.value)}/>
+        <input
+          type="text"
+          onChange={(e) => props.handleSearch(e.target.value)}
+        />
       </label>
-      <br/>
-      <br/>
+      <br />
+      <br />
 
       <label>
-        <strong>Filter:</strong>
-        <select onChange={(e)=>props.updateFilter(e.target.value)}>
+        <strong>GenreFilter:</strong>
+        <select onChange={(e) => props.updateFilter(e.target.value)}>
           <option value="All">All</option>
           <option value="Drama">Drama</option>
           <option value="Comedy">Comedy</option>
@@ -39,10 +42,25 @@ const Search = (props) => {
         </select>
       </label>
 
-
+      <label>
+        <strong>Mood Filter:</strong>
+        <select onChange={(e) => props.updateMoodFilter(e.target.value)}>
+          <option value="All">All</option>
+          <option value="🎭">🎭</option>
+          <option value="🚔">🚔</option>
+          <option value="🤠">🤠</option>
+          <option value="😂">😂</option>
+          <option value="🧐">🧐</option>
+          <option value="🦄">🦄</option>
+          <option value="😱">😱</option>
+          <option value="💓">💓</option>
+          <option value="⚾️">⚾️</option>
+          <option value="🦸‍♂️">🦸‍♂️</option>
+          <option value="👩‍🔬">👩‍🔬</option>
+        </select>
+      </label>
     </div>
   );
-}
- 
+};
 
 export default Search;
