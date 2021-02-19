@@ -20,7 +20,7 @@ movies = [
         "actors": "Alec Baldwin, Geena Davis, Annie McEnroe, Maurice Page",
         "plot": "A couple of recently deceased ghosts contract the services of a \"bio-exorcist\" in order to remove the obnoxious new owners of their house.",
         "poster": "https://resizing.flixster.com/gBrt2Pizroxd0QGaaSbEjlfHet0=/206x305/v2/https://flxt.tmsimg.com/NowShowing/1673/1673_ab.jpg",
-        "mood": ""
+        "mood": "😂"
     },
     {
         "id": 2,
@@ -66,7 +66,7 @@ movies = [
         "actors": "Paul Hogan, Linda Kozlowski, John Meillon, David Gulpilil",
         "plot": "An American reporter goes to the Australian outback to meet an eccentric crocodile poacher and invites him to New York City.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg0MTU1MTg4NF5BMl5BanBnXkFtZTgwMDgzNzYxMTE@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "😂"
     },
     {
         "id": 5,
@@ -98,7 +98,7 @@ movies = [
         "actors": "Patton Oswalt, Ian Holm, Lou Romano, Brian Dennehy",
         "plot": "A rat who can cook makes an unusual alliance with a young kitchen worker at a famous restaurant.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTMzODU0NTkxMF5BMl5BanBnXkFtZTcwMjQ4MzMzMw@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "😂"
     },
     {
         "id": 7,
@@ -128,7 +128,7 @@ movies = [
         "actors": "Guy Pearce, Carrie-Anne Moss, Joe Pantoliano, Mark Boone Junior",
         "plot": "A man juggles searching for his wife's murderer and keeping his short-term memory loss from being an obstacle.",
         "poster": "https://images-na.ssl-images-amazon.com/images/I/61aSBSpu5KL._SY445_.jpg",
-        "mood": ""
+        "mood": "🧐"
     },
     {
         "id": 9,
@@ -160,7 +160,7 @@ movies = [
         "actors": "Ian McKellen, Bimbo Hart, Alastair MacIntosh, David Kelly",
         "plot": "In a countryside town bordering on a magical land, a young man makes a promise to his beloved that he'll retrieve a fallen star by venturing into the magical realm.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjkyMTE1OTYwNF5BMl5BanBnXkFtZTcwMDIxODYzMw@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🦄"
     },
     {
         "id": 11,
@@ -191,7 +191,7 @@ movies = [
         "actors": "Diahnne Abbott, Frank Adu, Victor Argo, Gino Ardito",
         "plot": "A mentally unstable Vietnam War veteran works as a night-time taxi driver in New York City where the perceived decadence and sleaze feeds his urge for violent action, attempting to save a preadolescent prostitute in the process.",
         "poster": "https://m.media-amazon.com/images/M/MV5BM2M1MmVhNDgtNmI0YS00ZDNmLTkyNjctNTJiYTQ2N2NmYzc2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY1200_CR80,0,630,1200_AL_.jpg",
-        "mood": "🎭"
+        "mood": "🚔"
     },
     {
         "id": 13,
@@ -207,7 +207,7 @@ movies = [
         "actors": "Tommy Lee Jones, Javier Bardem, Josh Brolin, Woody Harrelson",
         "plot": "Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and more than two million dollars in cash near the Rio Grande.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5Njk3MjM4OV5BMl5BanBnXkFtZTcwMTc5MTE1MQ@@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🚔"
     },
     {
         "id": 14,
@@ -223,7 +223,7 @@ movies = [
         "actors": "Jessica Biel, John Cleese, Gary Oldman, Dwayne Johnson",
         "plot": "An alien civilization is invaded by Astronaut Chuck Baker, who believes that the planet was uninhabited. Wanted by the military, Baker must get back to his ship before it goes into orbit without him.",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTUyOTAyNTA5Ml5BMl5BanBnXkFtZTcwODU2OTM0Mg@@._V1_.jpg",
-        "mood": ""
+        "mood": "😂"
     },
     {
         "id": 15,
@@ -239,7 +239,7 @@ movies = [
         "actors": "Joseph Gordon-Levitt, Bruce Willis, Emily Blunt, Paul Dano",
         "plot": "In 2074, when the mob wants to get rid of someone, the target is sent into the past, where a hired gun awaits - someone like Joe - who one day learns the mob wants to 'close the loop' by sending back Joe's future self for assassination.",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTg5NTA3NTg4NF5BMl5BanBnXkFtZTcwNTA0NDYzOA@@._V1_.jpg",
-        "mood": "🎭"
+        "mood": "🚔"
     },
     {
         "id": 16,
@@ -271,7 +271,7 @@ movies = [
         "actors": "Joseph Cotten, Alida Valli, Orson Welles, Trevor Howard",
         "plot": "Pulp novelist Holly Martins travels to shadowy, postwar Vienna, only to find himself investigating the mysterious death of an old friend, Harry Lime.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMwNzMzMTQ0Ml5BMl5BanBnXkFtZTgwNjExMzUwNjE@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🧐"
     },
     {
         "id": 18,
@@ -302,7 +302,7 @@ movies = [
         "actors": "Al Pacino, Steven Bauer, Michelle Pfeiffer, Mary Elizabeth Mastrantonio",
         "plot": "In Miami in 1980, a determined Cuban immigrant takes over a drug cartel and succumbs to greed.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAzOTM4MzEwNl5BMl5BanBnXkFtZTgwMzU1OTc1MDE@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🚔"
     },
     {
         "id": 20,
@@ -349,7 +349,7 @@ movies = [
         "actors": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page, Tom Hardy",
         "plot": "A thief, who steals corporate secrets through use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🧐"
     },
     {
         "id": 23,
@@ -395,7 +395,7 @@ movies = [
         "actors": "Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington",
         "plot": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
         "poster": "https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_.jpg",
-        "mood": "🎭"
+        "mood": "🤠"
     },
     {
         "id": 26,
@@ -411,7 +411,7 @@ movies = [
         "actors": "Jodie Foster, Lawrence A. Bonney, Kasi Lemmons, Lawrence T. Wrentz",
         "plot": "A young F.B.I. cadet must confide in an incarcerated and manipulative killer to receive his help on catching another serial killer who skins his victims.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2NzkzMDI4OF5BMl5BanBnXkFtZTcwMDA0NzE1NA@@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🚔"
     },
     {
         "id": 27,
@@ -440,8 +440,8 @@ movies = [
         "director": "Guy Ritchie",
         "actors": "Benicio Del Toro, Dennis Farina, Vinnie Jones, Brad Pitt",
         "plot": "Unscrupulous boxing promoters, violent bookmakers, a Russian gangster, incompetent amateur robbers, and supposedly Jewish jewelers fight to track down a priceless stolen diamond.",
-        "poster": "https://vignette.wikia.nocookie.net/snatch/images/1/1a/Snatch_Film_Poster.jpg/revision/latest?cb=20170314175733"
-        
+        "poster": "https://vignette.wikia.nocookie.net/snatch/images/1/1a/Snatch_Film_Poster.jpg/revision/latest?cb=20170314175733",
+        "mood": "🚔"
     },
     {
         "id": 29,
@@ -457,7 +457,7 @@ movies = [
         "actors": "Brad Davis, Irene Miracle, Bo Hopkins, Paolo Bonacelli",
         "plot": "Billy Hayes, an American college student, is caught smuggling drugs out of Turkey and thrown into prison.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQyMDA5MzkyOF5BMl5BanBnXkFtZTgwOTYwNTcxMTE@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🚔"
     },
     {
         "id": 30,
@@ -487,7 +487,7 @@ movies = [
         "actors": "Jason Flemyng, Dexter Fletcher, Nick Moran, Jason Statham",
         "plot": "A botched card game in London triggers four friends, thugs, weed-growers, hard gangsters, loan sharks and debt collectors to collide with each other in a series of unexpected events, all for the sake of weed, cash and two antique shotguns.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyN2JmZmEtNjAyMy00NzYwLThmY2MtYWQ3OGNhNjExMmM4XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🚔"
     },
     {
         "id": 32,
@@ -503,7 +503,7 @@ movies = [
         "actors": "Josh Hartnett, Bruce Willis, Lucy Liu, Morgan Freeman",
         "plot": "A case of mistaken identity lands Slevin into the middle of a war being plotted by two of the city's most rival crime bosses: The Rabbi and The Boss. Slevin is under constant surveillance by relentless Detective Brikowski as well as the infamous assassin Goodkat and finds himself having to hatch his own ingenious plot to get them before they get him.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzc1OTEwMTk4OF5BMl5BanBnXkFtZTcwMTEzMDQzMQ@@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🚔"
     },
     {
         "id": 33,
@@ -518,7 +518,7 @@ movies = [
         "actors": "James Stewart, Grace Kelly, Wendell Corey, Thelma Ritter",
         "plot": "A wheelchair-bound photographer spies on his neighbours from his apartment window and becomes convinced one of them has committed murder.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNGUxYWM3M2MtMGM3Mi00ZmRiLWE0NGQtZjE5ODI2OTJhNTU0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🧐"
     },
     {
         "id": 34,
@@ -534,7 +534,7 @@ movies = [
         "actors": "Ivana Baquero, Sergi López, Maribel Verdú, Doug Jones",
         "plot": "In the falangist Spain of 1944, the bookish young stepdaughter of a sadistic army officer escapes into an eerie but captivating fantasy world.",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTU3ODg2NjQ5NF5BMl5BanBnXkFtZTcwMDEwODgzMQ@@._V1_UY1200_CR92,0,630,1200_AL_.jpg",
-        "mood": "🎭"
+        "mood": "🦄"
     },
     {
         "id": 35,
@@ -549,7 +549,7 @@ movies = [
         "actors": "Leonardo DiCaprio, Mark Ruffalo, Ben Kingsley, Max von Sydow",
         "plot": "In 1954, a U.S. marshal investigates the disappearance of a murderess who escaped from a hospital for the criminally insane.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTMxMTIyNzMxMV5BMl5BanBnXkFtZTcwOTc4OTI3Mg@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🧐"
     },
     {
         "id": 36,
@@ -565,7 +565,7 @@ movies = [
         "actors": "Harvey Keitel, Tim Roth, Michael Madsen, Chris Penn",
         "plot": "After a simple jewelry heist goes terribly wrong, the surviving criminals begin to suspect that one of them is a police informant.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjE5ZDJiZTQtOGE2YS00ZTc5LTk0OGUtOTg2NjdjZmVlYzE2XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🚔"
     },
     {
         "id": 37,
@@ -580,7 +580,7 @@ movies = [
         "actors": "Jack Nicholson, Shelley Duvall, Danny Lloyd, Scatman Crothers",
         "plot": "A family heads to an isolated hotel for the winter where an evil and spiritual presence influences the father into violence, while his psychic son sees horrific forebodings from the past and of the future.",
         "poster": "https://i.pinimg.com/originals/ff/2b/40/ff2b40c00b37f68ad3bd2f5f8e26bc59.jpg",
-        "mood": "🎭"
+        "mood": "😱"
     },
     {
         "id": 38,
@@ -596,7 +596,7 @@ movies = [
         "actors": "Owen Wilson, Rachel McAdams, Kurt Fuller, Mimi Kennedy",
         "plot": "While on a trip to Paris with his fiancée's family, a nostalgic screenwriter finds himself mysteriously going back to the 1920s everyday at midnight.",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTM4NjY1MDQwMl5BMl5BanBnXkFtZTcwNTI3Njg3NA@@._V1_.jpg",
-        "mood": ""
+        "mood": "💓"
     },
     {
         "id": 39,
@@ -612,7 +612,7 @@ movies = [
         "actors": "Hugh Jackman, Russell Crowe, Anne Hathaway, Amanda Seyfried",
         "plot": "In 19th-century France, Jean Valjean, who for decades has been hunted by the ruthless policeman Javert after breaking parole, agrees to care for a factory worker's daughter. The decision changes their lives forever.",
         "poster": "https://flxt.tmsimg.com/assets/p9088263_p_v11_ay.jpg",
-        "mood": ""
+        "mood": "🎭"
     },
     {
         "id": 40,
@@ -628,7 +628,7 @@ movies = [
         "actors": "Kevin Spacey, Russell Crowe, Guy Pearce, James Cromwell",
         "plot": "As corruption grows in 1950s LA, three policemen - one strait-laced, one brutal, and one sleazy - investigate a series of murders with their own brand of justice.",
         "poster": "https://3.bp.blogspot.com/-htPMO4wYH98/WDmz9b-109I/AAAAAAAAYf8/zLwy_m-rzoozw-HsuI2I9RLb4_RSwQb0gCLcB/s1600/la%2Bconfindential%2Bposter.jpg",
-        "mood": "🎭"
+        "mood": "🚔"
     },
     {
         "id": 41,
@@ -644,7 +644,7 @@ movies = [
         "actors": "Brad Pitt, Jonah Hill, Philip Seymour Hoffman, Robin Wright",
         "plot": "Oakland A's general manager Billy Beane's successful attempt to assemble a baseball team on a lean budget by employing computer-generated analysis to acquire new players.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxOTU3Mzc1M15BMl5BanBnXkFtZTcwMzk1ODUzNg@@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "⚾️"
     },
     {
         "id": 42,
@@ -658,7 +658,7 @@ movies = [
         "actors": "Bradley Cooper, Ed Helms, Zach Galifianakis, Justin Bartha",
         "plot": "Three buddies wake up from a bachelor party in Las Vegas, with no memory of the previous night and the bachelor missing. They make their way around the city in order to find their friend before his wedding.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU1MDA1MTYwMF5BMl5BanBnXkFtZTcwMDcxMzA1Mg@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "😂"
     },
     {
         "id": 43,
@@ -807,7 +807,7 @@ movies = [
         "actors": "Ian McKellen, Martin Freeman, Richard Armitage, Ken Stott",
         "plot": "The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🦄"
     },
     {
         "id": 53,
@@ -822,7 +822,7 @@ movies = [
         "actors": "Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina",
         "plot": "Two girlfriends on a summer holiday in Spain become enamored with the same painter, unaware that his ex-wife, with whom he has a tempestuous relationship, is about to re-enter the picture.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU2NDQ4MTg2MV5BMl5BanBnXkFtZTcwNDUzNjU3MQ@@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "💓"
     },
     {
         "id": 54,
@@ -883,7 +883,7 @@ movies = [
         "actors": "Anthony Perkins, Vera Miles, John Gavin, Janet Leigh",
         "plot": "A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run, and checks into a remote motel run by a young man under the domination of his mother.",
         "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg/1200px-Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg",
-        "mood": ""
+        "mood": "😱"
     },
     {
         "id": 58,
@@ -899,7 +899,7 @@ movies = [
         "actors": "Cary Grant, Eva Marie Saint, James Mason, Jessie Royce Landis",
         "plot": "A hapless New York advertising executive is mistaken for a government agent by a group of foreign spies, and is pursued across the country while he looks for a way to survive.",
         "poster": "hhttps://images-na.ssl-images-amazon.com/images/I/41-YsZvrB%2BL._SY445_.jpg",
-        "mood": ""
+        "mood": "🚔"
     },
     {
         "id": 59,
@@ -963,7 +963,7 @@ movies = [
         "actors": "Ben Stiller, Chris Rock, David Schwimmer, Jada Pinkett Smith",
         "plot": "Spoiled by their upbringing with no idea what wild life is really like, four animals from New York Central Zoo escape, unwittingly assisted by four absconding penguins, and find themselves in Madagascar, among a bunch of merry lemurs",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY4NDUwMzQxMF5BMl5BanBnXkFtZTcwMDgwNjgyMQ@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "😂"
     },
     {
         "id": 63,
@@ -994,7 +994,7 @@ movies = [
         "actors": "Joel Murray, Tara Lynne Barr, Melinda Page Hamilton, Mackenzie Brooke Smith",
         "plot": "On a mission to rid society of its most repellent citizens, terminally ill Frank makes an unlikely accomplice in 16-year-old Roxy.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQwMTc1MzA4NF5BMl5BanBnXkFtZTcwNzQwMTgzNw@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "😂"
     },
     {
         "id": 65,
@@ -1057,7 +1057,7 @@ movies = [
         "actors": "Humphrey Bogart, Ingrid Bergman, Paul Henreid, Claude Rains",
         "plot": "In Casablanca, Morocco in December 1941, a cynical American expatriate meets a former lover, with unforeseen complications.",
         "poster": "https://i.etsystatic.com/19389619/r/il/e518ed/1806880703/il_570xN.1806880703_s0yi.jpg",
-        "mood": "🎭"
+        "mood": "💓"
     },
     {
         "id": 69,
@@ -1073,7 +1073,7 @@ movies = [
         "actors": "Denzel Washington, Russell Crowe, Chiwetel Ejiofor, Josh Brolin",
         "plot": "In 1970s America, a detective works to bring down the drug empire of Frank Lucas, a heroin kingpin from Manhattan, who is smuggling the drug into the country from the Far East.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkyNzY5MDA5MV5BMl5BanBnXkFtZTcwMjg4MzI3MQ@@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🚔"
     },
     {
         "id": 70,
@@ -1089,7 +1089,7 @@ movies = [
         "actors": "Leonardo DiCaprio, Tom Hanks, Christopher Walken, Martin Sheen",
         "plot": "The true story of Frank Abagnale Jr. who, before his 19th birthday, successfully conned millions of dollars' worth of checks as a Pan Am pilot, doctor, and legal prosecutor.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🚔"
     },
     {
         "id": 71,
@@ -1104,7 +1104,7 @@ movies = [
         "actors": "Edward Norton, Edward Furlong, Beverly D'Angelo, Jennifer Lien",
         "plot": "A former neo-nazi skinhead tries to prevent his younger brother from going down the same wrong path that he did.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjA0MTM4MTQtNzY5MC00NzY3LWI1ZTgtYzcxMjkyMzU4MDZiXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🚔"
     },
     {
         "id": 72,
@@ -1136,7 +1136,7 @@ movies = [
         "actors": "Johnny Depp, Geoffrey Rush, Orlando Bloom, Keira Knightley",
         "plot": "Captain Barbossa, Will Turner and Elizabeth Swann must sail off the edge of the map, navigate treachery and betrayal, find Jack Sparrow, and make their final alliances for one last decisive battle.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIyNjkxNzEyMl5BMl5BanBnXkFtZTYwMjc3MDE3._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🦄"
     },
     {
         "id": 74,
@@ -1152,7 +1152,7 @@ movies = [
         "actors": "Johnny Depp, Penélope Cruz, Geoffrey Rush, Ian McShane",
         "plot": "Jack Sparrow and Barbossa embark on a quest to find the elusive fountain of youth, only to discover that Blackbeard and his daughter are after it too.",
         "poster": "https://www.hometheaterseattle.com/assets/images/pirates-of-the-caribbean-on-stranger-tides-2011.jpg",
-        "mood": ""
+        "mood": "🦄"
     },
     {
         "id": 75,
@@ -1184,7 +1184,7 @@ movies = [
         "actors": "Johnny Depp, Geoffrey Rush, Orlando Bloom, Keira Knightley",
         "plot": "Blacksmith Will Turner teams up with eccentric pirate \"Captain\" Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAyNDM4MTc2N15BMl5BanBnXkFtZTYwNDk0Mjc3._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🦄"
     },
     {
         "id": 77,
@@ -1200,7 +1200,7 @@ movies = [
         "actors": "Noel Appleby, Ali Astin, Sean Astin, David Aston",
         "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
         "poster": "https://images-na.ssl-images-amazon.com/images/I/71X6YzwV0gL._AC_SL1024_.jpg",
-        "mood": "🎭"
+        "mood": "🦄"
     },
     {
         "id": 78,
@@ -1216,7 +1216,7 @@ movies = [
         "actors": "Min-sik Choi, Ji-tae Yu, Hye-jeong Kang, Dae-han Ji",
         "plot": "After being kidnapped and imprisoned for 15 years, Oh Dae-Su is released, only to find that he must find his captor in 5 days.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI3NTQyMzU5M15BMl5BanBnXkFtZTcwMTM2MjgyMQ@@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🧐"
     },
     {
         "id": 79,
@@ -1231,7 +1231,7 @@ movies = [
         "actors": "Alfred Molina, Carrie-Anne Moss, Aurelien Parent Koenig, Antonio Gil",
         "plot": "A woman and her daughter open a chocolate shop in a small French village that shakes up the rigid morality of the community.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA4MDI3NTQwMV5BMl5BanBnXkFtZTcwNjIzNDcyMQ@@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "💓"
     },
     {
         "id": 80,
@@ -1279,7 +1279,7 @@ movies = [
         "actors": "Leonardo DiCaprio, Jonah Hill, Margot Robbie, Matthew McConaughey",
         "plot": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🚔"
     },
     {
         "id": 83,
@@ -1295,7 +1295,7 @@ movies = [
         "actors": "Ron Perlman, Selma Blair, Doug Jones, John Alexander",
         "plot": "The mythical world starts a rebellion against humanity in order to rule the Earth, so Hellboy and his team must save the world from the rebellious creatures.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5NzgyMjc2Nl5BMl5BanBnXkFtZTcwOTU3MDI3MQ@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🦸‍♂️"
     },
     {
         "id": 84,
@@ -1311,7 +1311,7 @@ movies = [
         "actors": "William Holden, Gloria Swanson, Erich von Stroheim, Nancy Olson",
         "plot": "A hack screenwriter writes a screenplay for a former silent-film star who has faded into Hollywood obscurity.",
         "poster": "https://upload.wikimedia.org/wikipedia/commons/1/14/Sunset_Boulevard_%281950_poster%29.jpg",
-        "mood": "🎭"
+        "mood": "💓"
     },
     {
         "id": 85,
@@ -1325,7 +1325,7 @@ movies = [
         "actors": "Beau Bridges, Rosanna Arquette, Mathew Botuchis, Shiri Appleby",
         "plot": "A 17-year-old boy buys mini-cameras and displays the footage online at I-see-you.com. The cash rolls in as the site becomes a major hit. Everyone seems to have fun until it all comes crashing down....",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwMDUzNzA5Nl5BMl5BanBnXkFtZTcwMjQ2Njk3MQ@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "😂"
     },
     {
         "id": 86,
@@ -1341,7 +1341,7 @@ movies = [
         "actors": "Ralph Fiennes, F. Murray Abraham, Mathieu Amalric, Adrien Brody",
         "plot": "The adventures of Gustave H, a legendary concierge at a famous hotel from the fictional Republic of Zubrowka between the first and second World Wars, and Zero Moustafa, the lobby boy who becomes his most trusted friend.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "😂"
     },
     {
         "id": 87,
@@ -1357,7 +1357,7 @@ movies = [
         "actors": "Bill Bailey, Anna Chancellor, Warwick Davis, Yasiin Bey",
         "plot": "Mere seconds before the Earth is to be demolished by an alien construction crew, journeyman Arthur Dent is swept off the planet by his friend Ford Prefect, a researcher penning a new edition of \"The Hitchhiker's Guide to the Galaxy.\"",
         "poster": "https://assets.mycast.io/posters/the-hitchhiker-s-guide-to-the-galaxy-fan-casting-poster-17204-medium.jpg?1570842843",
-        "mood": ""
+        "mood": "😂"
     },
     {
         "id": 88,
@@ -1372,7 +1372,7 @@ movies = [
         "actors": "Robert De Niro, James Woods, Elizabeth McGovern, Joe Pesci",
         "plot": "A former Prohibition-era Jewish gangster returns to the Lower East Side of Manhattan over thirty years later, where he once again must confront the ghosts and regrets of his old life.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMGFkNWI4MTMtNGQ0OC00MWVmLTk3MTktOGYxN2Y2YWVkZWE2XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🚔"
     },
     {
         "id": 89,
@@ -1388,7 +1388,7 @@ movies = [
         "actors": "Tom Cruise, Morgan Freeman, Olga Kurylenko, Andrea Riseborough",
         "plot": "A veteran assigned to extract Earth's remaining resources begins to question what he knows about his mission and himself.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQwMDY0MTA4MF5BMl5BanBnXkFtZTcwNzI3MDgxOQ@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🧐"
     },
     {
         "id": 90,
@@ -1420,7 +1420,7 @@ movies = [
         "actors": "Ethan Hawke, Uma Thurman, Gore Vidal, Xander Berkeley",
         "plot": "A genetically inferior man assumes the identity of a superior one in order to pursue his lifelong dream of space travel.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDQxOTc0MzMtZmRlOS00OWQ5LWI2ZDctOTAwNmMwOTYxYzlhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "👩‍🔬"
     },
     {
         "id": 92,
@@ -1452,7 +1452,7 @@ movies = [
         "actors": "Johnny Depp, Mia Wasikowska, Helena Bonham Carter, Anne Hathaway",
         "plot": "Nineteen-year-old Alice returns to the magical world from her childhood adventure, where she reunites with her old friends and learns of her true destiny: to end the Red Queen's reign of terror.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTMwNjAxMTc0Nl5BMl5BanBnXkFtZTcwODc3ODk5Mg@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🦄"
     },
     {
         "id": 94,
@@ -1483,7 +1483,7 @@ movies = [
         "actors": "Charlie Hunnam, Diego Klattenhoff, Idris Elba, Rinko Kikuchi",
         "plot": "As a war between humankind and monstrous sea creatures wages on, a former pilot and a trainee are paired up to drive a seemingly obsolete special weapon in a desperate effort to save the world from the apocalypse.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MTI5NjQ4Nl5BMl5BanBnXkFtZTcwOTU1OTU0OQ@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "👩‍🔬"
     },
     {
         "id": 96,
@@ -1499,7 +1499,7 @@ movies = [
         "actors": "Robert Downey Jr., Val Kilmer, Michelle Monaghan, Corbin Bernsen",
         "plot": "A murder mystery brings together a private eye, a struggling actress, and a thief masquerading as an actor.",
         "poster": "https://images-na.ssl-images-amazon.com/images/I/51zGZHTeZXL._AC_.jpg",
-        "mood": ""
+        "mood": "💓"
     },
     {
         "id": 97,
@@ -1530,7 +1530,7 @@ movies = [
         "actors": "Tom Hanks, Halle Berry, Jim Broadbent, Hugo Weaving",
         "plot": "An exploration of how the actions of individual lives impact one another in the past, present and future, as one soul is shaped from a killer into a hero, and an act of kindness ripples across centuries to inspire a revolution.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTczMTgxMjc4NF5BMl5BanBnXkFtZTcwNjM5MTA2OA@@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "👩‍🔬"
     },
     {
         "id": 99,
@@ -1622,7 +1622,7 @@ movies = [
         "actors": "Ethan Hawke, Julie Delpy, Andrea Eckert, Hanno Pöschl",
         "plot": "A young man and woman meet on a train in Europe, and wind up spending one evening together in Vienna. Unfortunately, both know that this will probably be their only night together.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQyMTM3MTQxMl5BMl5BanBnXkFtZTcwMDAzNjQ4Mg@@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "💓"
     },
     {
         "id": 105,
@@ -1637,7 +1637,7 @@ movies = [
         "actors": "Johnny Depp, Aaron Eckhart, Michael Rispoli, Amber Heard",
         "plot": "American journalist Paul Kemp takes on a freelance job in Puerto Rico for a local newspaper during the 1960s and struggles to find a balance between island culture and the expatriates who live there.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTM5ODA4MjYxM15BMl5BanBnXkFtZTcwMTM3NTE5Ng@@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "😂"
     },
     {
         "id": 106,
@@ -1669,7 +1669,7 @@ movies = [
         "actors": "Jack Nicholson, Faye Dunaway, John Huston, Perry Lopez",
         "plot": "A private detective hired to expose an adulterer finds himself caught up in a web of deceit, corruption and murder.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BN2YyNDE5NzItMjAwNC00MGQxLTllNjktZGIzMWFkZjA3OWQ0XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🧐"
     },
     {
         "id": 108,
@@ -1684,7 +1684,7 @@ movies = [
         "actors": "Brendan Gleeson, Chris O'Dowd, Kelly Reilly, Aidan Gillen",
         "plot": "After he is threatened during a confession, a good-natured priest must battle the dark forces closing in around him.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc3MjQ1MjE2M15BMl5BanBnXkFtZTgwNTMzNjE4MTE@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "😂"
     },
     {
         "id": 109,
@@ -1699,7 +1699,7 @@ movies = [
         "actors": "Ethan Hawke, Julie Delpy, Vernon Dobtcheff, Louise Lemoine Torrès",
         "plot": "Nine years after Jesse and Celine first met, they encounter each other again on the French leg of Jesse's book tour.",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MjAwNTM5Ml5BMl5BanBnXkFtZTYwNDM0MTc3._V1_.jpg",
-        "mood": "🎭"
+        "mood": "💓"
     },
     {
         "id": 110,
@@ -1775,7 +1775,7 @@ movies = [
         "actors": "Martin Balsam, John Fiedler, Lee J. Cobb, E.G. Marshall",
         "plot": "A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODQwOTc5MDM2N15BMl5BanBnXkFtZTcwODQxNTEzNA@@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🚔"
     },
     {
         "id": 115,
@@ -1807,7 +1807,7 @@ movies = [
         "actors": "Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow",
         "plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "👩‍🔬"
     },
     {
         "id": 117,
@@ -1823,7 +1823,7 @@ movies = [
         "actors": "David Schwimmer, Simon Pegg, Alice Eve, Natascha McElhone",
         "plot": "A frustrated, unemployed teacher joining forces with a scammer and his girlfriend in a blackmailing scheme.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY5NTc2NjYwOV5BMl5BanBnXkFtZTcwMzk5OTY0MQ@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "😂"
     },
     {
         "id": 118,
@@ -1855,7 +1855,7 @@ movies = [
         "actors": "Mike Myers, Eddie Murphy, Cameron Diaz, Julie Andrews",
         "plot": "Princess Fiona's parents invite her and Shrek to dinner to celebrate her marriage. If only they knew the newlyweds were both ogres.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk4MTMwNjI4M15BMl5BanBnXkFtZTcwMjExMzUyMQ@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🦄"
     },
     {
         "id": 120,
@@ -1870,7 +1870,7 @@ movies = [
         "actors": "Jessica Alba, Devon Aoki, Alexis Bledel, Powers Boothe",
         "plot": "A film that explores the dark and miserable town, Basin City, and tells the story of three different people, all caught up in violent corruption.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODZmYjMwNzEtNzVhNC00ZTRmLTk2M2UtNzE1MTQ2ZDAxNjc2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🧐"
     },
     {
         "id": 121,
@@ -1886,7 +1886,7 @@ movies = [
         "actors": "Bruce Dern, Will Forte, June Squibb, Bob Odenkirk",
         "plot": "An aging, booze-addled father makes the trip from Montana to Nebraska with his estranged son in order to claim a million-dollar Mega Sweepstakes Marketing prize.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU2Mjk2NDkyMl5BMl5BanBnXkFtZTgwNTk0NzcyMDE@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "😂"
     },
     {
         "id": 122,
@@ -1902,7 +1902,7 @@ movies = [
         "actors": "Mike Myers, Eddie Murphy, Cameron Diaz, John Lithgow",
         "plot": "After his swamp is filled with magical creatures, an ogre agrees to rescue a princess for a villainous lord in order to get his land back.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk2NTE1NTE0M15BMl5BanBnXkFtZTgwNjY4NTYxMTE@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🦄"
     },
     {
         "id": 123,
@@ -1918,7 +1918,7 @@ movies = [
         "actors": "Brad Pitt, Angelina Jolie, Vince Vaughn, Adam Brody",
         "plot": "A bored married couple is surprised to learn that they are both assassins hired by competing agencies to kill each other.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUxMzcxNzQzOF5BMl5BanBnXkFtZTcwMzQxNjUyMw@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "😂"
     },
     {
         "id": 124,
@@ -1934,7 +1934,7 @@ movies = [
         "actors": "Antonio Banderas, Angelina Jolie, Thomas Jane, Jack Thompson",
         "plot": "A woman along with her lover, plan to con a rich man by marrying him and on earning his trust running away with all his money. Everything goes as planned until she actually begins to fall in love with him.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODg3Mjg0MDY4M15BMl5BanBnXkFtZTcwNjY5MDQ2NA@@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🧐"
     },
     {
         "id": 125,
@@ -1950,7 +1950,7 @@ movies = [
         "actors": "Mike Myers, Eddie Murphy, Cameron Diaz, Antonio Banderas",
         "plot": "Rumpelstiltskin tricks a mid-life crisis burdened Shrek into allowing himself to be erased from existence and cast in a dark alternate timeline where Rumpel rules supreme.",
         "poster": "https://prodimage.images-bn.com/pimages/0191329061091_p0_v1_s1200x630.jpg",
-        "mood": ""
+        "mood": "🦄"
     },
     {
         "id": 126,
@@ -1965,7 +1965,7 @@ movies = [
         "actors": "Ethan Hawke, Julie Delpy, Seamus Davey-Fitzpatrick, Jennifer Prior",
         "plot": "We meet Jesse and Celine nine years on in Greece. Almost two decades have passed since their first meeting on that train bound for Vienna.",
         "poster": "https://m.media-amazon.com/images/M/MV5BMjA5NzgxODE2NF5BMl5BanBnXkFtZTcwNTI1NTI0OQ@@._V1_.jpg",
-        "mood": "🎭"
+        "mood": "💓"
     },
     {
         "id": 127,
@@ -2010,7 +2010,7 @@ movies = [
         "actors": "Ian McKellen, Martin Freeman, Richard Armitage, Ken Stott",
         "plot": "A reluctant hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home - and the gold within it - from the dragon Smaug.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_SX300.jpg",
-        "mood": ""
+        "mood": "🦄"
     },
     {
         "id": 130,
@@ -2041,7 +2041,7 @@ movies = [
         "actors": "Ray Romano, John Leguizamo, Denis Leary, Goran Visnjic",
         "plot": "Set during the Ice Age, a sabertooth tiger, a sloth, and a wooly mammoth find a lost human infant, and they try to return him to his tribe.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyNzI1ODA0MF5BMl5BanBnXkFtZTYwODIxODY3._V1_SX300.jpg",
-        "mood": ""
+        "mood": "😂"
     },
     {
         "id": 132,
@@ -2057,7 +2057,7 @@ movies = [
         "actors": "Alan Howard, Noel Appleby, Sean Astin, Sala Baker",
         "plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle Earth from the Dark Lord Sauron.",
         "poster": "https://tvguide1.cbsistatic.com/rovi/showcards/movie/134637/thumbs/16916251_1300x1733.jpg",
-        "mood": "🎭"
+        "mood": "🦄"
     },
     {
         "id": 133,
@@ -2073,7 +2073,7 @@ movies = [
         "actors": "Bruce Allpress, Sean Astin, John Bach, Sala Baker",
         "plot": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTAyNDU0NjY4NTheQTJeQWpwZ15BbWU2MDk4MTY2Nw@@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🦄"
     },
     {
         "id": 134,
@@ -2089,7 +2089,7 @@ movies = [
         "actors": "Domhnall Gleeson, Corey Johnson, Oscar Isaac, Alicia Vikander",
         "plot": "A young programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a breath-taking humanoid A.I.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUxNzc0OTIxMV5BMl5BanBnXkFtZTgwNDI3NzU2NDE@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "👩‍🔬"
     },
     {
         "id": 135,
@@ -2153,7 +2153,7 @@ movies = [
         "actors": "James Stewart, Kim Novak, Barbara Bel Geddes, Tom Helmore",
         "plot": "A San Francisco detective suffering from acrophobia investigates the strange activities of an old friend's wife, all the while becoming dangerously obsessed with her.",
         "poster": "https://upload.wikimedia.org/wikipedia/commons/7/75/Vertigomovie_restoration.jpg",
-        "mood": ""
+        "mood": "🧐"
     },
     {
         "id": 139,
@@ -2215,7 +2215,7 @@ movies = [
         "actors": "Matt Damon, Jessica Chastain, Kristen Wiig, Jeff Daniels",
         "plot": "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "👩‍🔬"
     },
     {
         "id": 143,
@@ -2246,7 +2246,7 @@ movies = [
         "actors": "Samuel L. Jackson, Kurt Russell, Jennifer Jason Leigh, Walton Goggins",
         "plot": "In the dead of a Wyoming winter, a bounty hunter and his prisoner find shelter in a cabin currently inhabited by a collection of nefarious characters.",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA1MTc1NTg5NV5BMl5BanBnXkFtZTgwOTM2MDEzNzE@._V1_SX300.jpg",
-        "mood": "🎭"
+        "mood": "🧐"
     },
     {
         "id": 145,
@@ -2296,7 +2296,8 @@ movies.each do |movie|
         actors: movie[:actors],
         plot: movie[:plot],
         poster_url: movie[:poster],
-        mood: "🙂"
+        # mood: "🙂"
+        mood:movie[:mood]
     )
 
 

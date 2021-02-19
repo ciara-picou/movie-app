@@ -6,16 +6,16 @@ export const MyMovies = (props) => {
       {props.myMovies.map((movie) => (
         <div className="movies-container">
           <Card className="movie" style={{ width: "18rem" }} id="movies">
-            <h2>{movie.movie.title}</h2>
+            <h2>{movie.title}</h2>
             <Card.Img
               variant="top"
-              src={movie.movie.poster_url}
-              alt={movie.movie.title}
+              src={movie.poster_url}
+              alt={movie.title}
               className="movie-image"
               width="400"
             />
             <Card.Body>
-              <Card.Title>{movie.movie.title}</Card.Title>
+              <Card.Title>{movie.title}</Card.Title>
               <Button
                 variant="secondary"
                 onClick={(e) => props.deleteMovie(movie.id)}

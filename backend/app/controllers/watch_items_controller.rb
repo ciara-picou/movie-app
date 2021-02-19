@@ -2,7 +2,7 @@ class WatchItemsController < ApplicationController
   def index
     watch_items = WatchItem.where(user_id: params[:user_id])
     render json: watch_items, include: [:movies, :users]
-    byebug
+    # byebug
   end
 
   def show 
@@ -25,7 +25,7 @@ class WatchItemsController < ApplicationController
 private
 
     def watch_params
-        params.require(:watch_items).permit(:movie_id, :user_id, :movie)
+        params.require(:watch_items).permit(:movie_id, :user_id)
     end
 
 end

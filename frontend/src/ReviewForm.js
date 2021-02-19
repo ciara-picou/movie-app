@@ -23,16 +23,10 @@ export class ReviewForm extends Component {
                 <Form.Control
                   size="lg"
                   type="hidden"
-                  //   value={this.props.movie.id}
+                  value={this.props.movie}
                 />
               </Form.Group>
-              <Form.Group controlId="new-review-form">
-                <Form.Control
-                  size="lg"
-                  type="hidden"
-                  //   value={this.props.user.id}
-                />
-              </Form.Group>
+            
               <Button variant="primary" type="submit">
                 Submit
               </Button>
