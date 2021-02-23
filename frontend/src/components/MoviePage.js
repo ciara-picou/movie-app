@@ -8,7 +8,7 @@ const MoviePage = (props) => {
   //   plot,
   //   poster_url,
   //   reviews,
-    
+
   // } = props.selectedMovie;
   console.log(props);
   return (
@@ -18,7 +18,7 @@ const MoviePage = (props) => {
       <img src={props.selectedMovie.poster_url}></img>
       <p>{props.selectedMovie.plot}</p>
 
-      {/* <ul>
+      <ul>
         {props.selectedMovie.reviews.map((review) => {
           return (
             <p>
@@ -26,7 +26,7 @@ const MoviePage = (props) => {
             </p>
           );
         })}
-      </ul> */}
+      </ul>
       <ReviewForm movie={props.selectedMovie} newReview={props.newReview} />
     </div>
   );

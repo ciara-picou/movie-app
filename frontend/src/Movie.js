@@ -1,5 +1,6 @@
 import React from "react";
 import MovieDetails from "./components/MovieDetails";
+import MoviePage from "./components/MoviePage";
 import { Card, Button } from "react-bootstrap";
 
 //export const Movie = (props) => {
@@ -13,8 +14,9 @@ class Movie extends React.Component {
     this.setState({ isClicked: !this.state.isClicked });
   };
 
+
   moviePageClick = () => {
-    this.props.select(this.props.movie);
+    this.props.selectMovie(this.props.movie);
     this.props.history.push("/moviepage");
   };
 
@@ -36,13 +38,15 @@ class Movie extends React.Component {
               addMovies={this.props.addMovies}
             />
           ) : null}
+          
           <Button variant="secondary" onClick={this.showDetails}>
             Movie Details
           </Button>
           <Button
             style={{ margin: "5px" }}
             variant="primary"
-            onClick={this.moviePageClick}
+           onClick={this.moviePageClick}
+            
           >
             Movie Page
           </Button>

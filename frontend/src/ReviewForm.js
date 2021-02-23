@@ -10,23 +10,24 @@ export class ReviewForm extends Component {
             <Col xs="auto">
               <Form.Group controlId="new-review-form">
                 <Form.Control
-                  as="textarea"
-                  rows={3}
+                  // as="textarea"
+                  // rows={3}
+                  size="med"
                   placeholder="Leave a review"
                 />
               </Form.Group>
               <Form.Group controlId="new-review-form">
                 <Form.Control size="med" placeholder="Username" />
               </Form.Group>
-
-              <Form.Group controlId="new-review-form">
+               
+               <Form.Group controlId="new-review-form">
                 <Form.Control
                   size="lg"
                   type="hidden"
-                  value={this.props.movie}
-                />
+                  value={JSON.stringify(this.props.movie)}
+                /> 
               </Form.Group>
-            
+
               <Button variant="primary" type="submit">
                 Submit
               </Button>

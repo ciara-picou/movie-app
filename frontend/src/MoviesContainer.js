@@ -28,7 +28,9 @@ export class MoviesContainer extends Component {
                   history={this.props.history}
                   movie={movie}
                   addMovies={this.props.addMovies}
-                  select={this.props.selectMovie}
+                  selectedMovie={this.props.selectedMovie}
+                  selectMovie={this.props.selectMovie}
+                  newReview={this.newReview}//
                 />
               );
             })}
