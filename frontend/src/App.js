@@ -28,40 +28,73 @@ class App extends Component {
     loggedInUserId: null,
     selectedMovie: "",
     selectedMovieReviews: [],
+   
   };
 
-  componentDidMount = () => {
-    fetch("http://localhost:3000/movies", {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${localStorage.token}`,
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then((res) => res.json())
-      .then((movies) => {
-        this.setState({
-          allMovies: movies,
-        });
-      });
+  // componentDidMount = () => {
+  //   fetch("http://localhost:3000/movies", {
+  //     method: "GET",
+  //     headers: {
+  //       Authorization: `Bearer ${localStorage.token}`,
+  //       "Content-Type": "application/json",
+  //       Accept: "application/json",
+  //     },
+  //   })
+  //     .then((res) => res.json())
+  //     .then((movies) => {
+  //       this.setState({
+  //         allMovies: movies,
+  //       });
+  //     });
 
-    fetch(`http://localhost:3000/users`, {
-      headers: {
-        Authorization: `Bearer ${localStorage.token}`,
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then((res) => res.json())
-      .then((user) => {
-        console.log(user);
+  //   fetch(`http://localhost:3000/users`, {
+  //     headers: {
+  //       Authorization: `Bearer ${localStorage.token}`,
+  //       "Content-Type": "application/json",
+  //       Accept: "application/json",
+  //     },
+  //   })
+  //     .then((res) => res.json())
+  //     .then((user) => {
+  //       console.log(user);
+  //       this.setState({
+  //         loggedInUserId: user.id,
+  //         myMovies: user.movies,
+  //       });
+  //     });
+  // };
+
+  componentDidMount() {
+    Promise.all([
+      fetch(`http://localhost:3000/movies`, {
+        headers: {
+          Authorization: `Bearer ${localStorage.token}`,
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      }),
+      fetch(`http://localhost:3000/users`, {
+        headers: {
+          Authorization: `Bearer ${localStorage.token}`,
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      }),
+    ])
+
+      .then(([res1, res2]) => {
+        return Promise.all([res1.json(), res2.json()]);
+      })
+      .then(([res1, res2]) => {
+        console.log(res2);
+        // set state in here
         this.setState({
-          loggedInUserId: user.id,
-          myMovies: user.movies,
+          allMovies: res1,
+          loggedInUserId: res2.id,
+          myMovies: res2.movies,
         });
       });
-  };
+  }
 
   setLoggedInUserId = (id) => {
     this.setState({
@@ -186,14 +219,13 @@ class App extends Component {
     })
       .then((res) => res.json())
 
-      .then((theNewReview) => {
-        console.log(this.state.selectedMovieReviews);
+       .then((theNewReview) => {
+        console.log(this.state.selectedMovie.reviews)
+        this.state.selectedMovie.reviews.push(theNewReview)
         this.setState({
-          selectedMovieReviews: [
-            ...this.state.selectedMovieReviews,
-            theNewReview,
-          ],
+          selectedMovie: this.state.selectedMovie
         });
+  
         console.log(this.state.selectedMovieReviews);
       });
   };
