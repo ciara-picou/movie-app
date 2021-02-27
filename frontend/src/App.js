@@ -1,5 +1,10 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import Home from "./Home";
 import { MyMovies } from "./MyMovies";
 import Movie from "./Movie";
@@ -22,61 +27,86 @@ class App extends Component {
     myMovies: [],
     loggedInUserId: null,
     selectedMovie: "",
-    reviews: [],
+    selectedMovieReviews: [],
+   
   };
 
-  componentDidMount = () => {
-    fetch("http://localhost:3000/movies", {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${localStorage.token}`,
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then((res) => res.json())
-      .then((movies) => {
-        this.setState({
-          allMovies: movies,
-        });
-      });
+  // componentDidMount = () => {
+  //   fetch("http://localhost:3000/movies", {
+  //     method: "GET",
+  //     headers: {
+  //       Authorization: `Bearer ${localStorage.token}`,
+  //       "Content-Type": "application/json",
+  //       Accept: "application/json",
+  //     },
+  //   })
+  //     .then((res) => res.json())
+  //     .then((movies) => {
+  //       this.setState({
+  //         allMovies: movies,
+  //       });
+  //     });
 
-    fetch(`http://localhost:3000/users`, {
-      headers: {
-        Authorization: `Bearer ${localStorage.token}`,
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then((res) => res.json())
-      .then((user) => {
-        console.log(user);
-        this.setState({
-          loggedInUserId: user.id,
-          myMovies: user.movies,
-        });
-      });
+  //   fetch(`http://localhost:3000/users`, {
+  //     headers: {
+  //       Authorization: `Bearer ${localStorage.token}`,
+  //       "Content-Type": "application/json",
+  //       Accept: "application/json",
+  //     },
+  //   })
+  //     .then((res) => res.json())
+  //     .then((user) => {
+  //       console.log(user);
+  //       this.setState({
+  //         loggedInUserId: user.id,
+  //         myMovies: user.movies,
+  //       });
+  //     });
+  // };
 
-    fetch("http://localhost:3000/reviews", {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${localStorage.token}`,
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then((res) => res.json())
-      .then((reviews) => {
+  componentDidMount() {
+    Promise.all([
+      fetch(`http://localhost:3000/movies`, {
+        headers: {
+          Authorization: `Bearer ${localStorage.token}`,
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      }),
+      fetch(`http://localhost:3000/users`, {
+        headers: {
+          Authorization: `Bearer ${localStorage.token}`,
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      }),
+    ])
+
+      .then(([res1, res2]) => {
+        return Promise.all([res1.json(), res2.json()]);
+      })
+      .then(([res1, res2]) => {
+        console.log(res2);
+        // set state in here
         this.setState({
-          reviews: reviews,
+          allMovies: res1,
+          loggedInUserId: res2.id,
+          myMovies: res2.movies,
         });
       });
-  };
+  }
 
   setLoggedInUserId = (id) => {
     this.setState({
       loggedInUserId: id,
     });
+  };
+
+  handleLogout = () => {
+    this.setState({
+      loggedInUserId: null,
+    });
+    localStorage.clear();
   };
 
   updateFilter = (newFilter) => {
@@ -122,7 +152,6 @@ class App extends Component {
           this.setState({
             myMovies: [...this.state.myMovies, theNewMovie.movie],
           });
-          console.log(this.state.myMovies);
         });
     }
   };
@@ -138,14 +167,16 @@ class App extends Component {
       );
     }
     if (this.state.moodFilter !== "All") {
-      return displayMovies.filter((movie) =>
-        movie.mood === this.state.moodFilter)
+      return displayMovies.filter(
+        (movie) => movie.mood === this.state.moodFilter
+      );
     }
     return displayMovies;
   };
 
   selectMovie = (movie) => {
     this.setState({ selectedMovie: movie });
+    this.setState({ selectedMovieReviews: movie.reviews });
   };
 
   delete = (watchItemId) => {
@@ -167,44 +198,54 @@ class App extends Component {
   };
 
   newReview = (e) => {
-    console.log(e.target.value[0], e.target.value[1], e.target.value[2]);
-    // fetch("http://localhost:3000/reviews", {
-    //     method: "POST",
-    //     headers: {
-    //       Authorization: `Bearer ${localStorage.token}`,
-    //       "Content-Type": "application/json",
-    //       Accept: "application/json",
-    //     },
-    //     body: JSON.stringify({
-    //       reviews: {
-    //         content:e.target.value[0],
-    //         movie_id:e.target.value[1].id,
-    //         username:e.target.value[2]
-    //       },
-    //     }),
-    //   })
-    //     .then((res) => res.json())
+    console.log("a new review");
+    e.preventDefault();
+    let movieString = e.target[2].value;
+    let movie = JSON.parse(movieString);
+    fetch("http://localhost:3000/reviews", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${localStorage.token}`,
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        reviews: {
+          content: e.target[0].value,
+          username: e.target[1].value,
+          movie_id: movie.id,
+        },
+      }),
+    })
+      .then((res) => res.json())
 
-    //     .then((theNewReview) => {
-    //       this.setState({
-    //         reviews: [...this.state.reviews, theNewReview],
-    //         selectedMovie:e.target.value[1]
-
-    //       });
-    //       console.log(this.state.myMovies)
-    //     });
+       .then((theNewReview) => {
+        console.log(this.state.selectedMovie.reviews)
+        this.state.selectedMovie.reviews.push(theNewReview)
+        this.setState({
+          selectedMovie: this.state.selectedMovie
+        });
+  
+        console.log(this.state.selectedMovieReviews);
+      });
   };
 
   render() {
     return (
       <React.Fragment>
-        <NavBar />
+        <NavBar handleLogout={this.handleLogout} />
         <Router>
           <Switch>
             <Route
               path="/login"
               render={(routerProps) => (
                 <Login {...routerProps} setUser={this.setLoggedInUserId} />
+              )}
+            />
+            <Route
+              path="/logout"
+              render={(routerProps) => (
+                <Home {...routerProps} setUser={this.setLoggedInUserId} />
               )}
             />
             <Route
@@ -223,6 +264,7 @@ class App extends Component {
                 <MoviePage
                   {...routerProps}
                   selectedMovie={this.state.selectedMovie}
+                  selectMovie={this.selectMovie}
                   newReview={this.newReview}
                 />
               )}
@@ -240,6 +282,7 @@ class App extends Component {
                   handleSearch={this.handleSearch}
                   addMovies={this.addMovies}
                   selectMovie={this.selectMovie}
+                  newReview={this.newReview} //
                 />
               )}
             />
