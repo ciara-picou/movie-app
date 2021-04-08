@@ -31,38 +31,7 @@ class App extends Component {
    
   };
 
-  // componentDidMount = () => {
-  //   fetch("http://localhost:3000/movies", {
-  //     method: "GET",
-  //     headers: {
-  //       Authorization: `Bearer ${localStorage.token}`,
-  //       "Content-Type": "application/json",
-  //       Accept: "application/json",
-  //     },
-  //   })
-  //     .then((res) => res.json())
-  //     .then((movies) => {
-  //       this.setState({
-  //         allMovies: movies,
-  //       });
-  //     });
-
-  //   fetch(`http://localhost:3000/users`, {
-  //     headers: {
-  //       Authorization: `Bearer ${localStorage.token}`,
-  //       "Content-Type": "application/json",
-  //       Accept: "application/json",
-  //     },
-  //   })
-  //     .then((res) => res.json())
-  //     .then((user) => {
-  //       console.log(user);
-  //       this.setState({
-  //         loggedInUserId: user.id,
-  //         myMovies: user.movies,
-  //       });
-  //     });
-  // };
+  
 
   componentDidMount() {
     Promise.all([
